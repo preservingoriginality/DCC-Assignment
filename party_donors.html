@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party Donors</title>
+</head>
+<body>
+    <h1>Party Donors</h1>
+    <table>
+        <tr>
+            <th>Company Name</th>
+            <th>Total Donation Amount</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/party_donors">Go Back</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Donations</title>
+</head>
+<body>
+    <h1>Company Donations</h1>
+    <form action="/company_donations" method="post">
+        <label for="company">Select Company:</label>
+        <select id="company" name="company">
+            {% for company in companies %}
+            <option value="{{ company }}">{{ company }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Get Donations">
+    </form>
+    <br>
+    <a href="/">Go Back</a>
+</body>
+</html>

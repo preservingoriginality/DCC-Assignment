@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party Statistics</title>
+</head>
+<body>
+    <h1>Party Statistics</h1>
+    <form action="/party_stats" method="post">
+        <label for="party">Select Party:</label>
+        <select id="party" name="party">
+            {% for party in parties %}
+            <option value="{{ party }}">{{ party }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Get Statistics">
+    </form>
+    <br>
+    <a href="/">Go Back</a>
+    <br/>
+    <a href="/">Save Data</a>
+</body>
+</html>

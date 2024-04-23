@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party Donors</title>
+</head>
+<body>
+    <h1>Party Donors</h1>
+    <form action="/party_donors" method="post">
+        <label for="party">Select Party:</label>
+        <select id="party" name="party">
+            {% for party in parties %}
+            <option value="{{ party }}">{{ party }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Get Donors">
+    </form>
+    <br>
+    <a href="/">Go Back</a>
+</body>
+</html>

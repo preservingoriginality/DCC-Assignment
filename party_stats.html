@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party Statistics</title>
+</head>
+<body>
+    <h1>Party Statistics</h1>
+    <table>
+        <tr>
+            <th>Encashment Year</th>
+            <th>Number of Donations</th>
+            <th>Total Donation Amount in Lakhs</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/party_stats">Go Back</a>
+    <a href="/">Save Data as png </a>
+</body>
+</html>

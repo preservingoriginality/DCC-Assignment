@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Bond Number</th>
+            <th>Reference ID</th>
+            <th>Company Name</th>
+            <th>Purchase Date</th>
+            <th>Expiry Date</th>
+            <th>Political Party</th>
+            <th>Bond Value</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[8] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[6] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[4] }}</td>
+            <td>{{ result[16] }}</td>
+            <td>{{ result[20] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Save data as png</a>
+</body>
+</html>
