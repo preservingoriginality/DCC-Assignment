@@ -1,7 +1,11 @@
 Firstly we use the Fitz library to get all the information from the electoral bond pdf into a csv file. For this I have used Command  prompt, which is safe secure and it directly connects to the server. We import the library than we generate a document out of that 
 ![Screenshot 2024-04-16 181359](https://github.com/preservingoriginality/DCC-Assignment/assets/167908457/3fb6055b-505b-44f3-ac76-c6c0a35d3dc9)
 Then we get all the information from the  table by using page.find tables. From there we get a huge list from every page.Thereafter from every page we geta huge list, which we append to a more bigger list 
+
+
 ![Screenshot 2024-04-16 162914](https://github.com/preservingoriginality/DCC-Assignment/assets/167908457/bf1c9437-d615-4a8b-b906-7aa22c925377)
+
+
 Then from that big list we make a pandas dataframe which is easily converted to the csv file
 ![Screenshot 2024-04-16 174304](https://github.com/preservingoriginality/DCC-Assignment/assets/167908457/7578cab3-fc85-4441-8e52-8ca777f3318e)
 
